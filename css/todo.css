@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* 全局背景颜色 */
+body {
+    background-color: #cdcdcd;
+}
+/* 页眉灰色大背景 */
+.head_bar {
+  height: 50px;
+  margin: 0px auto;
+  background-color: #333333;
+}
+/* 页眉中间居中的盒子 */
+.head_box {
+  width: 600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* to-do list 文字 */
+.title {
+  width: 20%;
+  height: 25px;
+  float: left;
+  color: white;
+  margin-top: 25px;
+  transform: translateY(-50%);
+}
+/* 输入框 */
+.type_box {
+  width: 60%;
+  height: 20px;
+  float: right;
+  border-radius: 5px;
+  outline: none;
+  text-indent: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+.list {
+    width: 600px;
+    margin: 0px auto;
+    font-size: 16px;
+}
+.undone li {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    list-style: circle;
+    border-radius: 5px;
+    background: white;
+    padding-left: 10px;
+}
+.undone li:hover,
+.done li:hover {
+  cursor: pointer;
+}
+.done li {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    list-style: disc;
+    text-decoration: line-through;
+    color: white;
+    font-style: italic;
+    border-radius: 5px;
+    background: black;
+    padding-left: 10px;
+}
+.undone a,
+.done a {
+  float: right;
+  text-decoration: none;
+  color: red;
+  padding-right: 10px;
+}
+.done a {
+  font-style: normal;
+}
